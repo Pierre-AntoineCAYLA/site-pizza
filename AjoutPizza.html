@@ -18,11 +18,16 @@
 	
 		<section>
 			<p><h3>Création d'un client</h3>
-				Libelle : <input type="text" name="libelle" id="libelle" autofocus required> <br/>
-				Référence : <input type="text" name="reference" id="refence" required > <br/>
-				Prix : <input type="number" name="prix" id="prix" required> <br/>
-				Photo : <input type="file" name="Photo" id="Photo" required> <br/>			
-				<input type="submit" value="Envoyer">							
+			<form methode="POST" action="/AjoutPizza.html">
+				<label for="libelle">Libelle :</label>
+				<input type="text" name="libelle" id="libelle" autofocus required> <br/>
+				<label for="reference">Reference :</label>
+				<input type="text" name="reference" id="refence" required > <br/>
+				<label for="prix">Prix :</label>
+				<input type="number" name="prix" id="prix" required> <br/>
+				<label for="Photo">Photo :</label><input type="file" name="Photo" id="Photo" required> <br/>			
+				<input type="submit" value="Envoyer">
+			</form>				
 		</section>
 	</body>
 

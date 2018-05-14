@@ -13,22 +13,26 @@
 	<body>
 		<section>
 				<p><h2>Ajout d'une commande</h2>
-				Numero : <input type="number" name="numero" id="numero" autofocus required> <br/>
-				Date : <input type="date" name="date" id="date" > <br/>
-				Livreur : 
+				<form methode="POST" action="/AjoutCommande.html">
+				<label for="numero">Numero :</label>
+				<input type="number" name="numero" id="numero" autofocus required> <br/>
+				<label for="Date">Date :</label>
+				<input type="date" name="date" id="date" > <br/>
+				<label for="Livreur">Livreur :</label>
 				<select> 
 					<option>Sophie Armand</option>
 					<option>Laurent Berurier</option>
 					<option>Sylvain Denis </option>
 				</select>
 				<br/>
-				Client : <select required> 
+				<label for="client">Client :</label><select required> 
 					<option>Sophie Armand</option>
 					<option>Laurent Berurier</option>
 					<option>Sylvain Denis </option>
 					</br>
 				</select>
 				<input type="submit" value="Envoyer">
+				</form>
 		</section>
 	</body>
 </html>
